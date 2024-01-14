@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Press+Start+2P&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 110vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(194, 178, 178);
+}
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 370px;
+  border-radius: 24px;
+  padding: 25px;
+  background-color: rgb(236, 229, 229);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  box-shadow: 10px 10px 5px black, 18px 18px 5px red, 26px 26px 3px white;
+}
+.profile-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 36%;
+  width: 100%;
+  background-color: rgb(229, 134, 115);
+  border-radius: 24px 24px;
+}
+
+.image {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background-color: rgb(214, 104, 82);
+  padding: 3px;
+  margin-bottom: 10px;
+}
+.profile-image {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 3px solid rgb(250, 217, 217);
+  
+}
+.profile-card .text-data {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.text-data .name {
+  font-size: 22px;
+  font-weight: 500;
+}
+.text-data .job {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+
+.media-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.media-buttons .link {
+  margin: 0 8px;
+  background-color: goldenrod;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  font-size: 18px;
+  text-decoration: none;
+  color: white;
+}
+
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
+}
+.buttons .button {
+  background-color: rgb(214, 104, 82);
+  color: whitesmoke;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  border-radius: 24px;
+  margin: 0px 10px;
+  padding: 8px 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+ 
+}
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+.data {
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  font-size: 16px;
+  border-right: 1.25px solid #777;
+}
+.data:last-child{
+  border-right: none;
+}
+
+.data i {
+  font-size: 18px;
+  margin-right: 6px;
+}
